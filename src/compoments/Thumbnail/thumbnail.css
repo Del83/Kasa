@@ -1,0 +1,44 @@
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1240px;
+    left: 0px;
+    top: 0px;
+    border-radius: 25px;
+    background-color: #F7F7F7;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+.thumbnail-picture {
+    height: 340px;
+    width: 340px;
+    border-radius: 5px;
+    padding: 30px;
+    
+  }
+  
+.thumbnail-title {
+    position: relative;
+    left: 20px;
+    height: 52px;
+    width: 300px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 26px;
+    letter-spacing: 0em;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+.thumbnail-filtre {
+    position: relative;
+    left: 30px;
+    bottom: 105px;
+    height: 52px;
+    width: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  }
