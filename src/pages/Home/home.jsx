@@ -12,9 +12,10 @@ function Home() {
       <Header />
       <Banner /> 
     <div className="thumbnail">
-      {logements.map(({ cover, title, index}) => (
+      {logements.map(({ id, cover, title, index}) => (
         <Thumbnail 
-        key={`${title}-${index}`}  
+        key={`${title}-${index}`}
+        id={id}  
         cover={cover}
         title={title}
       />

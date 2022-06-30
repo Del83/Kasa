@@ -1,0 +1,110 @@
+.lodging-main {
+    margin-left: 6.5em;
+    margin-right: 6.5em;
+}
+
+.lodgTitle-container {
+    color: #FF6060;
+    
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.lodgTitle-title {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight:lighter;
+    margin: 2px;
+}
+
+.lodgTitle-location {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight:lighter;
+    margin: 2px;
+}
+
+
+.dropdown-lodg {   
+  width: 100%;
+  display: flex;
+  column-gap: 60px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+}
+
+.lodg-dropdown-container {
+    height: 47px;
+    width: 582px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 31px;
+    
+}    
+
+.lodg-dropdown-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+    
+.lodg-dropdown-content {
+    max-width: 582px;
+    background-color: #f7f7f7;
+    color: #FF6060;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: -38px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    list-style-type: none;
+    margin-inline: auto;
+    margin-bottom: 31px;
+}
+
+.chevron {
+    width: 24px;
+    height: 14px;
+}
+
+.lodging-tags-stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lodg-tags {
+    display: flex;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6060;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin: 20px 10px 24px 0;
+    width: max-content;
+    padding: 2px 20px;
+    height: 25px;
+    border-radius: 10px;
+  }
+
+  .stars {
+    height: 30px;
+  }

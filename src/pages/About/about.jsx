@@ -10,10 +10,6 @@ function About() {
     <Header />
     <Banner />
     <AboutMain /> 
-        <div className="about-container">
-            
-        </div>
-    
     <Footer />
     </div>
   );

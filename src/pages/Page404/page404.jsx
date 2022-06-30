@@ -12,7 +12,7 @@ function Error() {
             <span className="four-o-four-details"> Oups! La page que vous demandez n'existe pas.</span>
             <Link to="/home"
             className="back-to-home">
-            <span>Retourner sur la page d&apos;accueil</span>
+            <span>Retourner sur la page d'accueil</span>
             </Link>
         </div>
     

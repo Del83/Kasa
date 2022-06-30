@@ -1,8 +1,6 @@
 import { useLocation } from "react-router-dom";
 import bannerHomeD from "../../assets/bannerHomeD.png";
 import bannerAboutD from "../../assets/bannerAboutD.png";
-
-
 import "./layout.css";
 
 function Banner() {
