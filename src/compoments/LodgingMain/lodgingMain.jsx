@@ -1,35 +1,53 @@
 import "./lodging.css";
 import LodgCarousel from "./lodgCarousel";
 import LodgTitle from "./lodgTitle";
+import LodgLocation from "./lodgLocation";
 import LodgDropdown from "./lodgDropdown";
+import LodgHost from "./lodgHost";
 import Tags from "./lodgTags";
 import Stars from "./lodgStars";
 
-function LodgingMain( { id, title, location, description, equipments, tags, host, rating } ) {
+function LodgingMain( { id, title, pictures, location, description, equipments, tags, host, rating } ) {
 
     const equipementList = equipments.map((equipment) => <li>{equipment}</li> );
 
     return (
     <div className="lodging-main">
 
-        <LodgCarousel />
-
-
-        <LodgTitle 
+        <LodgCarousel 
             title={title}
-            location={location} 
+            pictures={pictures}
         />
-        <section className="lodging-tags-stars">
-            <Tags 
-                tags={tags}
-            />
-            
-            <Stars
-                rating={rating}
-            />
+
+        <section className="lodging-section">
+            <section className="lodging-section-left">
+            <LodgTitle 
+                    title={title}
+                /> 
+
+                <LodgLocation 
+                    location={location} 
+                />
+
+                <Tags 
+                    tags={tags}
+                />
+                </section>
+
+                <section className="lodging-section-right">
+                    <LodgHost 
+                        name={host.name}
+                        picture={host.picture}
+                    />
+
+                    <Stars
+                        rating={rating}
+                    />
+                </section>
         </section>
         
 
+    
 
         <section className="dropdown-lodg">
             <LodgDropdown

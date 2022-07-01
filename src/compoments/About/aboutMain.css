@@ -44,3 +44,37 @@
     height: 14px;
 }
 
+@media screen and (max-width: 425px) {
+    
+    .banner-image {
+
+
+        width: 336px;
+        height: auto;
+    }
+    .dropdown-about {
+        width: 335px;
+        margin: auto;
+    }
+
+    .about-dropdown-container { 
+        max-width: 335px;
+        height: 30px;
+    }
+    .about-dropdown-title {
+        font-size: 13px;
+    }
+
+    .about-dropdown-content {
+        font-size: 12px;
+        margin-bottom: 20px;
+        line-height: 17px;
+        padding: 23px 12px;
+    }
+
+    .chevron {
+        width: 15px;
+        height: 9px;
+    }
+
+  }

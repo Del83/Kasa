@@ -1,15 +1,20 @@
 import { useLocation } from "react-router-dom";
 import bannerHomeD from "../../assets/bannerHomeD.png";
+import bannerHomeM from "../../assets/bannerHomeM.png";
 import bannerAboutD from "../../assets/bannerAboutD.png";
+import bannerAboutM from "../../assets/bannerAboutM.png";
 import "./layout.css";
 
 function Banner() {
+  const screenWidth = window.screen.width;
+  console.log(screenWidth);
   const homeBanner = () => {
-    return <img className="banner-image" src={bannerHomeD} alt="Page d'accueil !" />;
+    
+    return <img className="banner-image" src={ (screenWidth == "425") ? bannerHomeM : bannerHomeD } alt="Page d'accueil !" />;
   };
 
   const aboutBanner = () => {
-    return <img className="banner-image" src={bannerAboutD} alt="Page à propos !" />;
+    return <img className="banner-image" src={ (screenWidth < 425) ? bannerAboutD : bannerAboutM } alt="Page à propos !" />;
   };
  
   const currentUrl = useLocation();

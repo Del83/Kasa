@@ -13,7 +13,7 @@ function LodgDropdown({ title, contents }) {
     const content = () => { return <p className="lodg-dropdown-content">{contents}</p> };
       
       return (
-        <div>
+        <div className="lodg-dropdown">
           <div className="lodg-dropdown-container" onClick={handleFolded}>
             <p className="lodg-dropdown-title">{title}</p>
             <img className="chevron" src={chevron} alt="chevron menu déroulant" />

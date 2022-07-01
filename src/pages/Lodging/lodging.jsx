@@ -20,6 +20,7 @@ return (
         location={currentIdLodging.location} 
         description={currentIdLodging.description}
         equipments={currentIdLodging.equipments}
+        pictures={currentIdLodging.pictures}
         tags={currentIdLodging.tags}
         host={currentIdLodging.host}
         rating={currentIdLodging.rating}

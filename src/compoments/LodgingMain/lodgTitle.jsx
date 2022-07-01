@@ -1,12 +1,11 @@
 import "./lodging.css";
 
 
-function LodgTitle( { title, location } ) {
+function LodgTitle( { title } ) {
     return (
     
         <div className="lodgTitle-container">
-            <h1 className="lodgTitle-title">{title}</h1>
-            <h2 className="lodgTitle-location">{location}</h2>
+            <h1 className="lodg-title">{title}</h1>
         </div>
     )
 }

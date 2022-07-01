@@ -1,30 +1,154 @@
 .lodging-main {
     margin-left: 6.5em;
     margin-right: 6.5em;
+
+}
+
+.lodging-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 425px) {
+.lodging-main {
+    width: auto;
+    padding: 20px;
+    margin: 0;
+}
+}
+
+/** -------------------- CAROUSSEL -------------------- */
+.caroussel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.lodg-photo {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.chevronPrev, .chevronNext {
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    top: 346px;
+    cursor: pointer;
+}
+
+.chevronPrev {
+    left: 123px;
+}
+
+.chevronNext {
+    right: 123px;
+}
+
+.chevronNone {
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .lodging-photo {
+        height: 255px;
+    }
+
+    .chevronPrev, .chevronNext {
+        height: 25px;
+        width: 15px;
+    }
+
+    .chevronPrev {
+        position: absolute;
+        left: 123px;
+        top: 346px;
+    }
+
+
+    }
+
+
+/** -------------------- TITLE et HOST-------------------- */
+.lodging-title-host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lodgTitle-container {
     color: #FF6060;
-    
     letter-spacing: 0em;
     text-align: left;
 }
 
-.lodgTitle-title {
+.lodg-title {
     font-size: 36px;
     line-height: 51px;
     font-weight:lighter;
     margin: 2px;
+    margin-top: 30px;
 }
 
-.lodgTitle-location {
+.lodgHost-container {
+    display: flex;
+    align-items: center;
+}
+
+.lodgHost-picture {
+    border-radius: 50%;
+    height: 64px;
+}
+
+.lodgHost-name {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    width: 90px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .lodging-title-host {
+        display: block;
+    }
+    .lodg-title {
+        font-size: 18px;
+        font-weight:500;
+        line-height: 25px;
+    }
+}
+
+
+/** -------------------- LOCATION -------------------- */
+.lodg-location {
+    color: #FF6060;
     font-size: 18px;
     line-height: 26px;
     font-weight:lighter;
-    margin: 2px;
+    margin: 0;
+    position: relative;
+}
+
+@media screen and (max-width: 425px) {
+    .lodg-location {
+        font-size: 14px;
+        font-weight:500;
+        line-height: 20px;
+        
+    }
 }
 
 
+/** -------------------- DROPDOWN -------------------- */
 .dropdown-lodg {   
   width: 100%;
   display: flex;
@@ -33,9 +157,12 @@
   justify-content: space-between;
 }
 
+.lodg-dropdown {
+    width: 50%;
+}
+
 .lodg-dropdown-container {
     height: 47px;
-    width: 582px;
     margin: auto;
     position: relative;
     display: flex;
@@ -78,8 +205,39 @@
 .chevron {
     width: 24px;
     height: 14px;
+    cursor: pointer;
 }
 
+@media screen and (max-width: 425px) {
+
+    .dropdown-lodg {   
+        display: block;
+
+      }
+
+      .lodg-dropdown {
+        width: 100%; 
+    }  
+
+    .lodg-dropdown-title {        
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .lodg-dropdown-container {
+        height: 30px;
+        margin-bottom: 25px;
+        
+    }    
+
+    .lodg-dropdown-content {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+
+/** -------------------- STARS et TAGS-------------------- */
 .lodging-tags-stars {
     display: flex;
     justify-content: space-between;
@@ -108,3 +266,23 @@
   .stars {
     height: 30px;
   }
+
+  @media screen and (max-width: 425px) {
+    .lodging-tags-stars {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tags {
+        font-size: 10px;
+        line-height: 14px;
+        height: 18px;   
+    }
+
+    .stars {
+        height: 20px;
+        padding-left: 5px;
+        margin-bottom: 25px;
+    }
+
+}

@@ -28,3 +28,23 @@
     text-align: center;
     margin-top: 182px;
 }
+
+@media screen and (max-width: 425px) {
+    .four-o-four {
+        font-size: 96px;
+    }
+    .four-o-four-details {     
+        font-size: 18px;
+    }
+    .back-to-home {
+        font-size: 14px;
+        margin-top: 133px;
+    }
+
+    .error-container {
+        width: 260px;
+        margin: auto;
+        margin-top: 182px;
+    }
+   
+  }
