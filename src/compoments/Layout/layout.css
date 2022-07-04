@@ -1,3 +1,6 @@
+
+
+/** -------------------- HEADER -------------------- */
 .header {
     min-height: 170px;
     display: flex;
@@ -12,10 +15,10 @@
 
 .header-logo {
     height: 68px;
-    pointer-events: none;
     position: absolute;
     left: 100px;
     top: 40px;
+    pointer-events: none;
 }
 
 .header-nav {
@@ -34,40 +37,6 @@
     text-decoration: none;
   }
 
-.footer {
-    height: 209px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    color: white;
-    font-weight: 500;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.footer-logoblanc {
-    position: relative;
-    margin: auto;
-    top: 13px;
-    height: 40px;
-    width: 120px;
-}
-
-.footer-copyright {
-    font-size: 24px;
-    margin-bottom: 29px;
-}
-
-.banner-image {
-    height: 223px;
-    width: 1240px;
-    left: 100px;
-    top: 171px;
-    margin-bottom: 30px;
-  }
-
   @media screen and (max-width: 425px) {
     .header {
         flex-direction: row;
@@ -76,12 +45,12 @@
         min-height: 0px;
         padding: 20px;
     }
+
     .header-logo {
         height: 47px;
         position: relative;
         left: 0;
         top: 0;
-
     }
 
     .header-nav {
@@ -92,12 +61,60 @@
     .header-link {
         font-size: 12px;
         line-height: 17px;
-        padding-left: 10px;
+        padding-left: 15px;
         text-transform: uppercase;
     }
+  }
 
+/** -------------------- FOOTER -------------------- */  
+.footer {
+    background-color: black;
+    color: white;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.footer-logoblanc {
+    height: 40px;
+    width: 120px;
+    position: relative;
+    top: 13px;
+    margin: auto;
+}
+
+.footer-copyright {
+    font-size: 24px;
+    margin-bottom: 29px;
+}
+
+@media screen and (max-width: 425px) {
     .footer-copyright {
         font-size: 12px;
     }
+}
 
+
+/** -------------------- BANNER -------------------- */
+.banner {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.banner-image {
+    height: 223px;
+    width: 100%;
+    left: 100px;
+    top: 171px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 425px) {
+    .banner {
+        margin: auto;
+    }
   }

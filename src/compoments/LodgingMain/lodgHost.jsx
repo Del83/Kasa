@@ -1,6 +1,5 @@
 import "./lodging.css";
 
-
 function LodgHost( { name, picture } ) {
     return (
         <div className="lodgHost-container">

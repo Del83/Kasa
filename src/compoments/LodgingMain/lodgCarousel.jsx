@@ -1,7 +1,7 @@
-import "./lodging.css";
 import { useState } from "react";
 import chevronPrev from "../../assets/chevronPrev.png";
 import chevronNext from "../../assets/chevronNext.png";
+import "./lodging.css";
 
 function Carousel ({title, pictures} ) {
 
@@ -25,9 +25,9 @@ function Carousel ({title, pictures} ) {
 
     return (
         <div className="carousel">
-            <img onClick={Previous} className={pictures.length > 1 ? "chevronPrev" : "chevronNone"} src={chevronPrev} alt="chevron du caroussel" />
+            <img onClick={Previous} className={pictures.length > 1 ? "chevronPrev" : "chevronNone"} src={chevronPrev} alt="précédent" />
             <img className="lodg-photo" src={pictures[index]} alt={title}/> 
-            <img onClick={Next} className={pictures.length > 1 ? "chevronNext" : "chevronNone"} src={chevronNext} alt="chevron du caroussel" />
+            <img onClick={Next} className={pictures.length > 1 ? "chevronNext" : "chevronNone"} src={chevronNext} alt="suivant" />
         </div>
 
     )

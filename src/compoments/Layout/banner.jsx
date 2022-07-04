@@ -7,14 +7,13 @@ import "./layout.css";
 
 function Banner() {
   const screenWidth = window.screen.width;
-  console.log(screenWidth);
-  const homeBanner = () => {
-    
-    return <img className="banner-image" src={ (screenWidth == "425") ? bannerHomeM : bannerHomeD } alt="Page d'accueil !" />;
+
+  const homeBanner = () => {    
+    return <img className="banner-image" src={ (screenWidth == 425) ? bannerHomeM : bannerHomeD } alt="Page d'accueil !" />;
   };
 
   const aboutBanner = () => {
-    return <img className="banner-image" src={ (screenWidth < 425) ? bannerAboutD : bannerAboutM } alt="Page à propos !" />;
+    return <img className="banner-image" src={ (screenWidth == 425) ? bannerAboutM : bannerAboutD } alt="Page à propos !" />;
   };
  
   const currentUrl = useLocation();
@@ -22,8 +21,7 @@ function Banner() {
   return (
     <section>
       <div className="banner">
-      {currentUrl.pathname.includes("/about") ? aboutBanner() : homeBanner()}
-        
+        {currentUrl.pathname.includes("/about") ? aboutBanner() : homeBanner()}
       </div>
     </section>
   );

@@ -1,31 +1,29 @@
 .thumbnail {
+    background-color: #F7F7F7;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 1240px;
     left: 0px;
     top: 0px;
-    border-radius: 25px;
-    background-color: #F7F7F7;
-    align-items: center;
-    justify-content: center;
     margin: auto;
+    border-radius: 25px;
   }
   
 .thumbnail-picture {
     height: 340px;
     width: 340px;
-    border-radius: 10%;
     padding: 30px;
-    
+    border-radius: 10%;
   }
   
 .thumbnail-title {
+    color: white;
     position: relative;
     left: 20px;
     height: 52px;
     width: 300px;
-    color: white;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 900;
     line-height: 26px;
@@ -45,9 +43,9 @@
 
   @media screen and (max-width: 425px) {
     .thumbnail {
-      flex-direction: column;
-      width: 375px;
       background-color: white;
+      width: 375px;
+      flex-direction: column;
     }
 
     .thumbnail-picture {
@@ -62,9 +60,9 @@
     }
 
     .thumbnail-filtre {
-      left: 0px;
-      bottom: 80px;
       height: 52px;
       width: 335px;
+      left: 0px;
+      bottom: 80px;
     }
   }

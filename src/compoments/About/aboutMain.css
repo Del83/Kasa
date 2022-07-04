@@ -1,42 +1,36 @@
 .about-dropdown-container {
-    height: 47px;
-    max-width: 1024px;
-    margin: auto;
+    background-color: #FF6060;
+    color: white;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    background-color: #FF6060;
-    color: white;
-    border-radius: 5px;
+    height: 47px;
+    max-width: 1024px;
+    margin: auto;
     margin-bottom: 31px;
+    padding: 0 20px;
+    border-radius: 5px;
 }    
 
 .about-dropdown-title {
-    color: white;
     font-size: 24px;
     font-weight: 500;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: left;
+
 }
     
 .about-dropdown-content {
-    max-width: 1024px;
     background-color: #f7f7f7;
     color: #FF6060;
+    max-width: 1024px;
     font-size: 24px;
     font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-top: -38px;
-    padding: 40px 20px;
-    border-radius: 5px;
-    list-style-type: none;
     margin-inline: auto;
     margin-bottom: 31px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    line-height: 34px;
 }
 
 .chevron {
@@ -45,14 +39,12 @@
 }
 
 @media screen and (max-width: 425px) {
-    
     .banner-image {
-
-
         width: 336px;
         height: auto;
     }
-    .dropdown-about {
+
+    .about-dropdown {
         width: 335px;
         margin: auto;
     }
@@ -61,14 +53,15 @@
         max-width: 335px;
         height: 30px;
     }
+
     .about-dropdown-title {
         font-size: 13px;
     }
 
     .about-dropdown-content {
         font-size: 12px;
-        margin-bottom: 20px;
         line-height: 17px;
+        margin-bottom: 20px;
         padding: 23px 12px;
     }
 
