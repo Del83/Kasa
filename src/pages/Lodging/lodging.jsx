@@ -1,9 +1,13 @@
 import { useLocation } from 'react-router-dom'
-import Header from "../../compoments/Layout/header";
-import LodgingMain from "../../compoments/LodgingMain/lodgingMain";
-import Footer from "../../compoments/Layout/footer";
+import Header from "../../components/Layout/header";
+import LodgingMain from "../../components/LodgingMain/lodgingMain";
+import Footer from "../../components/Layout/footer";
 import logements from "../../datas/datas.json";
 
+
+/**
+ * React Component function : Lodging page
+ */
 function Lodging() {
     const currentUrl = useLocation();
     const currentIdLodging = [...logements].filter((data) => data.id === currentUrl.pathname.split("/lodging/")[1])[0];

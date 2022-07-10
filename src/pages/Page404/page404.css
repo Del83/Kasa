@@ -27,7 +27,7 @@
     margin-top: 182px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
     .error-container {
         width: 260px;
         margin: auto;

@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
-import Header from "../../compoments/Layout/header";
+import Header from "../../components/Layout/header";
 import "./page404.css";
 
+
+/**
+ * React Component function : Error 404 page not found
+ */
 function Error() {
   return (
     <div className="error">

@@ -1,8 +1,11 @@
-import Header from "../../compoments/Layout/header";
-import Banner from "../../compoments/Layout/banner";
-import AboutMain from "../../compoments/About/aboutMain"
-import Footer from "../../compoments/Layout/footer";
+import Header from "../../components/Layout/header";
+import Banner from "../../components/Layout/banner";
+import AboutMain from "../../components/About/aboutMain"
+import Footer from "../../components/Layout/footer";
 
+/**
+ * React Component function : About page
+ */
 function About() {
   return (
     <div className="about">

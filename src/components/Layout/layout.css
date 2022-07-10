@@ -1,0 +1,121 @@
+
+
+/** -------------------- HEADER -------------------- */
+.header {
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.header-logo {
+    height: 68px;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    pointer-events: none;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    padding-top: 57px;
+}
+
+.header-link {
+    color: #FF6060;
+    display:inline-block;
+    padding-left: 57px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 0px;
+        padding: 20px;
+    }
+
+    .header-logo {
+        height: 47px;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .header-nav {
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+
+    .header-link {
+        font-size: 12px;
+        line-height: 17px;
+        padding-left: 15px;
+        text-transform: uppercase;
+    }
+  }
+
+/** -------------------- FOOTER -------------------- */  
+.footer {
+    background-color: black;
+    color: white;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.footer-logoblanc {
+    height: 40px;
+    width: 120px;
+    position: relative;
+    top: 13px;
+    margin: auto;
+}
+
+.footer-copyright {
+    font-size: 24px;
+    margin-bottom: 29px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-copyright {
+        font-size: 12px;
+    }
+}
+
+
+/** -------------------- BANNER -------------------- */
+.banner {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.banner-image {
+    height: 223px;
+    width: 100%;
+    left: 100px;
+    top: 171px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .banner {
+        margin: auto;
+    }
+  }

@@ -1,0 +1,288 @@
+.lodging-main {
+    margin-left: 6.5em;
+    margin-right: 6.5em;
+}
+
+.lodging-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .lodging-main {
+        width: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .lodging-section {
+        flex-direction: column;
+    }
+
+    .lodging-section-right {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .lodging-section-left {
+        width: 100%;
+    }
+}
+
+
+/** -------------------- CAROUSSEL -------------------- */
+.caroussel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.lodg-photo {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.chevronPrev, .chevronNext {
+    position: absolute;
+    height: 80px;
+    width: 60px;
+    top: 346px;
+    cursor: pointer;
+}
+
+.chevronPrev {
+    left: 123px;
+}
+
+.chevronNext {
+    right: 123px;
+}
+
+.chevronNone {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .lodg-photo {
+        height: 255px;
+    }
+
+    .chevronPrev, .chevronNext {
+        height: 25px;
+        width: 20px;
+        position: absolute;
+        top: 225px;
+    }
+
+    .chevronPrev {
+        left: 25px;
+    }
+
+    .chevronNext {
+        right: 25px;
+    }
+}
+
+
+/** -------------------- TITLE et HOST-------------------- */
+.lodgTitle-container {
+    color: #FF6060;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.lodg-title {
+    font-size: 36px;
+    font-weight:lighter;
+    line-height: 51px;
+    margin: 2px;
+    margin-top: 30px;
+}
+
+.lodgHost-container {
+    display: flex;
+    align-items: center;
+}
+
+.lodgHost-picture {
+    border-radius: 50%;
+    height: 64px;
+}
+
+.lodgHost-name {
+    color: #FF6060;
+    width: 90px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .lodg-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    .lodgHost-name {
+        font-size: 12px;
+        line-height: 17px;
+        width: 60px;
+    }
+
+    .lodgHost-picture {
+        height: 36px;
+    }
+}
+
+
+/** -------------------- LOCATION -------------------- */
+.lodg-location {
+    color: #FF6060;
+    position: relative;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .lodg-location {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+
+
+/** -------------------- DROPDOWN -------------------- */
+.lodging-dropdown {   
+  width: 100%;
+  display: flex;
+  column-gap: 60px;
+  padding-bottom: 80px;
+  justify-content: space-between;
+}
+
+.lodg-dropdown {
+    width: 50%;
+}
+
+.lodg-dropdown-container {
+    background-color: #FF6060;
+    color: white;
+    height: 47px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 31px;
+    padding: 0 20px;
+    border-radius: 5px;
+}    
+
+.lodg-dropdown-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+    
+.lodg-dropdown-content {
+    background-color: #f7f7f7;
+    color: #FF6060;
+    max-width: 582px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-inline: auto;
+    margin-top: -38px;
+    margin-bottom: 31px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.chevron {
+    width: 24px;
+    height: 14px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .lodging-dropdown {   
+        display: block;
+        padding-bottom: 50px;
+      }
+
+      .lodg-dropdown {
+        width: 100%; 
+    }  
+
+    .lodg-dropdown-title {        
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .lodg-dropdown-container {
+        height: 30px;
+        margin-bottom: 25px;
+    }    
+
+    .lodg-dropdown-content {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+
+/** -------------------- STARS et TAGS-------------------- */
+.lodg-tags {
+    display: flex;
+}
+
+.tags {
+    background: #FF6060;
+    color: white;
+    width: max-content;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 10px 24px 0;
+    padding: 2px 20px;
+    border-radius: 5px;
+  }
+
+  .stars {
+    height: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .tags {
+        height: 18px;
+        font-size: 10px;
+        line-height: 14px;  
+    }
+
+    .stars {
+        height: 20px;
+        padding-left: 5px;
+        margin-bottom: 25px;
+    }
+}
