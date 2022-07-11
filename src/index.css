@@ -8,3 +8,7 @@ body {
 code {
   font-family: Montserrat;
 }
+
+a {
+  text-decoration: none;
+}

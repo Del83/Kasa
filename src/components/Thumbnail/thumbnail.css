@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 1240px;
+    width: 92%;
     left: 0px;
     top: 0px;
     margin: auto;
@@ -15,7 +15,7 @@
     height: 340px;
     width: 340px;
     padding: 30px;
-    border-radius: 10%;
+    border-radius: 10px 10px 10px 10px;
   }
   
 .thumbnail-title {
@@ -26,7 +26,7 @@
     width: 300px;
     font-size: 18px;
     font-weight: 900;
-    line-height: 26px;
+    line-height: 22px;
     letter-spacing: 0em;
     border-radius: 5px;
     text-align: left;
@@ -35,10 +35,11 @@
 .thumbnail-filtre {
     position: relative;
     left: 30px;
-    bottom: 105px;
+    bottom: 86px;
     height: 52px;
     width: 340px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 0 0 10px 10px;
   }
 
   @media screen and (max-width: 600px) {
@@ -52,7 +53,6 @@
       height: 255px;
       width: 335px;
       padding: 1px;
-      
     }
 
     .thumbnail-card > a {
@@ -62,7 +62,8 @@
     .thumbnail-filtre {
       height: 52px;
       width: 335px;
-      left: 0px;
-      bottom: 80px;
+      left: 1px;
+      bottom: 57px;
+      border-radius: 0 0 10px 10px;;
     }
   }

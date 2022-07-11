@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 import Header from "../../components/Layout/header";
 import LodgingMain from "../../components/LodgingMain/lodgingMain";
 import Footer from "../../components/Layout/footer";
-import logements from "../../datas/datas.json";
+import logements from "../../data/datas.json";
 
 
 /**
